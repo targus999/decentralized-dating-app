@@ -1,0 +1,128 @@
+/* src/ModalForm.css */
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* Ensure the modal is above all other content */
+}
+
+/* Modal Styling */
+.modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Content Styling */
+.modal-content h2 {
+    color: #8a2be2;
+    /* Purple color for the modal title */
+    text-align: center;
+}
+
+/* Form Styles */
+.modal form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.modal label {
+    font-size: 1rem;
+    color: #333;
+    width: 100%;
+    /* Ensure label takes up full width */
+    text-align: left;
+    /* Align label text to the left */
+    display: flex;
+    /* Use flexbox to align label and input */
+    flex-direction: column;
+    /* Stack label and input vertically */
+    width: 80%;
+    /* Set a fixed width for label and input */
+    text-align: left;
+    /* Align the label text to the left */
+    gap: 5px;
+    /* Optional: Add space  between label and input */
+}
+
+/* Input and Textarea Styling */
+.modal input,
+.modal textarea,
+.modal select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 80%; /* Set width of inputs, textarea, and dropdown */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+.image-upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .optional-note {
+    font-size: 0.9rem;
+    color: #888; /* Light gray color to indicate it's optional */
+    font-style: italic; /* Optional: Make it italic to emphasize the note */
+    text-align: center; /* Center the note below the input field */
+  }
+/* Placeholder Styling */
+.modal input::placeholder,
+.modal textarea::placeholder,
+.modal select {
+  color: #888; /* Light gray color for placeholders */
+  font-style: italic; /* Optional: Make placeholder text italic */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    /* Push buttons to left and right */
+    gap: 10px;
+    /* Optional: add space between buttons */
+    margin-top: 20px;
+    /* Add some margin to the top for spacing */
+}
+
+.modal button {
+    padding: 8px 20px;
+    /* Reduced width of the buttons */
+    background-color: #8a2be2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    /* Slightly smaller font */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: auto;
+    /* Ensure the button is not stretched */
+    margin: 15px auto;
+    /* Center the buttons */
+}
+
+.modal button:hover {
+    background-color: #6a1d9e;
+}
+
+.modal button:active {
+    background-color: #4a148c;
+}
